@@ -1,0 +1,14 @@
+# Python 虛擬環境
+/.venv/
+
+# Python 執行時快取
+__pycache__/
+*.py[cod]
+
+# 本機環境設定；保留可上傳的設定範例
+/.env
+/.env.*
+!/.env.example
+
+# 本機聊天紀錄與儲存時產生的暫存檔
+/.runtime/
