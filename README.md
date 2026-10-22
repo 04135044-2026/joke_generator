@@ -96,6 +96,8 @@ py -3.12 -m venv .venv
 ├── data/
 │   ├── corpus.txt               # 原始笑話短句
 │   └── jokes.json               # 結構化素材、笑點說明及延伸內容
+├── docs/
+│   └── images/                 # 結果呈現截圖
 ├── requirements.txt             # Python 套件與版本限制
 ├── .env.example                 # 環境變數範例
 ├── .gitignore                   # Git 排除清單
@@ -104,6 +106,20 @@ py -3.12 -m venv .venv
 
 `.venv/`、`.runtime/`、`.env` 與 Python 快取為本機檔案，不納入 Git。
 `.runtime/` 在儲存對話時自動建立，不需要預先建立或上傳。
+
+## 結果呈現
+
+### 換一個笑話與延續情節
+
+輸入「換一個」生成新故事，再輸入「然後？」延續同一個故事的人物與情節。
+
+![換一個笑話後，追問並延續故事情節的終端機截圖](docs/images/change-and-continue.png)
+
+### 詢問笑點
+
+生成笑話後輸入「笑點」，模型會針對上一個故事說明反差與幽默之處。
+
+![生成笑話後，詢問笑點並取得解釋的終端機截圖](docs/images/explain-joke.png)
 
 ## 使用方式
 
